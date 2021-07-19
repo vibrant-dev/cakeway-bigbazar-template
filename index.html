@@ -92,6 +92,14 @@
       .display-none {
         display: none !important;
       }
+      .dropdown-item {
+        font-weight: 400;
+      }
+      @media screen and (min-width: 992px) {
+        .navbar .navbar-nav li a, .navbar .navbar-nav li ul.dropdown-menu {
+          transition: none;
+        }
+      }
     </style>
 
     <script>
@@ -252,7 +260,7 @@
                                   <li class="nav-item highlight-item">
                                       <a class="nav-link" href="/same-day-delivery">Same Day Delivery</a>
                                   </li>
-                                  <li class="nav-item dropdown">
+                                  <li class="nav-item dropdown mega-dropdown">
                                       <a class="nav-link dropdown-toggle" href="index.html">Cakes</a>
                                       <ul class="dropdown-menu mega-dropdown-menu">
                                         <li class="mega-container">
