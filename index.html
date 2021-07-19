@@ -57,6 +57,9 @@
       [class*="product-search-"] .form-inline button {
         background-color: #80808085 !important;
       }
+      .header-sticky [class*="product-search-"] .form-inline.search-pill-shape {
+        border: 1px solid #80808063 !important;
+      }
       @media screen and (min-width: 1660px) {
         .container {
           max-width: 1600px;
@@ -130,7 +133,6 @@
                                 <ul class="my-account-popup">
                                     <li><a href="my-account.html"><span class="menu-item-text">My Account</span></a></li>
                                     <li><a href="checkout.html"><span class="menu-item-text">Checkout</span></a></li>
-                                    <li><a href="wishlist.html"><span class="menu-item-text">Wishlist</span></a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -154,14 +156,9 @@
                   </div>
                   <div class="col-lg-4 col-md-3 xs-mx-none">
                     <div class="margin-right-1 h-100 d-flex align-items-center justify-content-end">
-                        <div class="wishlist-view">
-                            <a href="wishlist.html" class="position-relative top-quantity d-flex align-items-center text-white text-decoration-none">
-                                <i class="flaticon-like flat-small text-dark"></i>
-                            </a>
-                        </div>
                         <div class="refresh-view">
                             <a href="compare.html" class="position-relative top-quantity d-flex align-items-center text-white text-decoration-none">
-                                <i class="flaticon-shuffle flat-small text-dark"></i>
+                                <i class="flaticon-user-3 flat-small text-dark"></i>
                             </a>
                         </div>
                         <div class="header-cart-2">
@@ -418,14 +415,7 @@
                                                 <span class="slide-nav-close"><i class="flaticon-cancel flat-mini text-white"></i></span>
                                             </div>
                                             <div class="menu-and-category">
-                                                <ul class="nav nav-pills wc-tabs" id="menu-and-category" role="tablist">
-                                                    <li class="nav-item" role="presentation">
-                                                        <a class="nav-link active" id="pills-push-menu-tab" data-bs-toggle="pill" href="#pills-push-menu" role="tab" aria-controls="pills-push-menu" aria-selected="true">Menu</a>
-                                                    </li>
-                                                    <li class="nav-item" role="presentation">
-                                                        <a class="nav-link" id="pills-push-categories-tab" data-bs-toggle="pill" href="#pills-push-categories" role="tab" aria-controls="pills-push-categories" aria-selected="true">Categories</a>
-                                                    </li>
-                                                </ul>
+                                                
                                                 <div class="tab-content" id="menu-and-categoryContent">
                                                     <div class="tab-pane fade show active woocommerce-Tabs-panel woocommerce-Tabs-panel--description" id="pills-push-menu" role="tabpanel" aria-labelledby="pills-push-menu-tab">
                                                         <div class="push-navbar">
@@ -591,7 +581,6 @@
                                                                 </li>
                                                                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                                                             </ul>
-                                                            <a href="#" class="p-20 d-block bg-secondary text-primary text-uppercase font-600 hover-text-primary">Buy now!</a>
                                                         </div>
                                                     </div>
                                                     <div class="tab-pane fade" id="pills-push-categories" role="tabpanel" aria-labelledby="pills-push-categories-tab">
@@ -819,110 +808,87 @@
                                         </div>
                                     </nav>
                                 </div>
-                                <a class="navbar-brand" href="#"><img class="nav-logo" src="assets/images/logo/16.png" alt="Image not found !"></a>
+                                <a class="navbar-brand" href="#"><img class="nav-logo" src="assets/images/logo/1.png" alt="Image not found !"></a>
                             </div>
                         </div>
-                        <div class="col-xxl-3 col-xl-4 col-lg-3 col-6 order-lg-3">
-                            <div class="margin-right-1 d-flex align-items-center justify-content-end h-100 md-py-10">
-                                <div class="sign-in position-relative font-general my-account-dropdown">
-                                    <a href="my-account.html" class="has-dropdown d-flex align-items-center text-dark text-decoration-none" title="My Account">
-                                        <i class="flaticon-user-3 flat-mini mx-auto me-1"></i>
-                                    </a>
-                                    <ul class="my-account-popup">
-                                        <li><a href="my-account.html"><span class="menu-item-text">My Account</span></a></li>
-                                        <li><a href="checkout.html"><span class="menu-item-text">Checkout</span></a></li>
-                                        <li><a href="wishlist.html"><span class="menu-item-text">Wishlist</span></a></li>
-                                    </ul>
-                                </div>
-                                <div class="wishlist-view">
-                                    <a href="wishlist.html" class="position-relative top-quantity d-flex align-items-center text-white text-decoration-none" title="Wishlist">
-                                        <i class="flaticon-like flat-mini mx-auto text-dark"></i>
-                                    </a>
-                                </div>
-                                <div class="refresh-view">
-                                    <a href="compare.html" class="position-relative top-quantity d-flex align-items-center text-dark text-decoration-none">
-                                        <i class="flaticon-shuffle flat-mini mx-auto text-dark"></i>
-                                    </a>
-                                </div>
-                                <div class="header-cart-1">
-                                    <a href="cart.html" class="cart has-cart-data" title="View Cart">
-                                        <div class="cart-icon"><i class="flaticon-shopping-cart flat-mini"></i> <span class="header-cart-count">2</span></div>
-                                        <div class="cart-wrap">
-                                            <div class="cart-text">Cart</div>
-                                            <span class="header-cart-count">(2) Item</span>
-                                            <span class="woocommerce-Price-amount amount">
-                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>62.00</bdi>
-                                            </span>
-                                        </div>
-                                    </a>
-                                    <div class="cart-popup">
-                                        <ul class="cart_list product_list_widget ">
-                                            <li class="mini-cart-item">
-                                                <a href="#" class="remove" title="Remove this item"><i class="fas fa-times"></i></a>
-                                                <a href="#" class="product-image bg-light"><img src="assets/images/products/squire-95.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Cart product"></a>
-                                                <a href="#" class="product-name">Women Black Fashion Shirt</a>
-                                                <div class="woocommerce-product-rating">
-                                                    <div class="star-rating">
-                                                        <div class="rating-wrap">
-                                                            <a href="single-shop.html"><i class="fas fa-star"></i><span> 4.9 (68)</span></a>
-                                                        </div>
+                        <div class="col-xxl-4 col-xl-4 col-lg-3 col-6 order-lg-3">
+                          <div class="margin-right-1 h-100 d-flex align-items-center justify-content-end">
+                            <div class="refresh-view">
+                                <a href="compare.html" class="position-relative top-quantity d-flex align-items-center text-white text-decoration-none">
+                                    <i class="flaticon-user-3 flat-small text-dark"></i>
+                                </a>
+                            </div>
+                            <div class="header-cart-2">
+                                <a href="cart.html" class="cart has-cart-data" title="View Cart">
+                                    <div class="cart-icon"><i class="flaticon-add-to-basket flat-small"></i> <span class="header-cart-count">2</span></div>
+                                    <div class="cart-wrap">
+                                        <div class="cart-text">Cart</div>
+                                        <span class="header-cart-count">(2) Item</span>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi><span class="woocommerce-Price-currencySymbol">$</span>62.00</bdi>
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="cart-popup">
+                                    <ul class="cart_list product_list_widget ">
+                                        <li class="mini-cart-item">
+                                            <a href="#" class="remove" title="Remove this item"><i class="fas fa-times"></i></a>
+                                            <a href="#" class="product-image bg-light"><img src="assets/images/products/squire-95.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Cart product"></a>
+                                            <a href="#" class="product-name">Women Black Fashion Shirt</a>
+                                            <div class="woocommerce-product-rating">
+                                                <div class="star-rating">
+                                                    <div class="rating-wrap">
+                                                        <a href="single-shop.html"><i class="fas fa-star"></i><span> 4.9 (68)</span></a>
                                                     </div>
                                                 </div>
-                                                <div class="variation">
-                                                    <span>Vendor:</span>
-                                                    <span>Women's Fashion</span>
-                                                </div>
-                                                <div class="cart-item-quantity">1 ×
-                                                    <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>24.00</bdi>
-                                                    </span>
-                                                </div>
-                                            </li>
-                                            <li class="mini-cart-item">
-                                                <a href="#" class="remove" title="Remove this item"><i class="fas fa-times"></i></a>
-                                                <a href="#" class="product-image bg-light"><img src="assets/images/products/squire-105.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Cart product"></a>
-                                                <a href="#" class="product-name">Blazar Jins Coat</a>
-                                                <div class="woocommerce-product-rating">
-                                                    <div class="star-rating">
-                                                        <div class="rating-wrap">
-                                                            <a href="single-shop.html"><i class="fas fa-star"></i><span> 4.7 (73)</span></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="variation">
-                                                    <span>Vendor:</span>
-                                                    <span>Men's Fashion</span>
-                                                </div>
-                                                <div class="cart-item-quantity">1 ×
-                                                    <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>38.00</bdi>
-                                                    </span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <div class="total-cart">
-                                            <div class="title">Total: </div>
-                                            <div class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>62.00</span>
                                             </div>
+                                            <div class="variation">
+                                                <span>Vendor:</span>
+                                                <span>Women's Fashion</span>
+                                            </div>
+                                            <div class="cart-item-quantity">1 ×
+                                                <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>24.00</bdi>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="mini-cart-item">
+                                            <a href="#" class="remove" title="Remove this item"><i class="fas fa-times"></i></a>
+                                            <a href="#" class="product-image bg-light"><img src="assets/images/products/squire-105.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Cart product"></a>
+                                            <a href="#" class="product-name">Blazar Jins Coat</a>
+                                            <div class="woocommerce-product-rating">
+                                                <div class="star-rating">
+                                                    <div class="rating-wrap">
+                                                        <a href="single-shop.html"><i class="fas fa-star"></i><span> 4.7 (73)</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="variation">
+                                                <span>Vendor:</span>
+                                                <span>Men's Fashion</span>
+                                            </div>
+                                            <div class="cart-item-quantity">1 ×
+                                                <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>38.00</bdi>
+                                                </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="total-cart">
+                                        <div class="title">Total: </div>
+                                        <div class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>62.00</span>
                                         </div>
-                                        <div class="buttons">
-                                            <a href="cart.html" class="btn btn-primary rounded-0 view-cart">View cart</a>
-                                            <a href="checkout.html" class="btn btn-secondary rounded-0 checkout">Check out</a>
-                                        </div>
+                                    </div>
+                                    <div class="buttons">
+                                        <a href="cart.html" class="btn btn-primary rounded-0 view-cart">View cart</a>
+                                        <a href="checkout.html" class="btn btn-secondary rounded-0 checkout">Check out</a>
                                     </div>
                                 </div>
                             </div>
+                          </div>
                         </div>
-                        <div class="col-xxl-7 col-xl-6 col-lg-6 col-12 order-lg-2">
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-12 order-lg-2">
                             <div class="product-search-one">
                                 <form class="form-inline search-pill-shape" action="#" method="post">
                                     <input type="text" class="form-control search-field" name="search" placeholder="I’m shopping for">
-                                    <div class="select-appearance-none">
-                                        <select class="form-control">
-                                            <option selected>All Categories</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
                                     <button type="submit" name="submit" class="search-submit"><i class="flaticon-search flat-mini text-white"></i></button>
                                 </form>
                             </div>
@@ -7282,7 +7248,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="footer-widget mb-5">
                             <div class="footer-logo mb-4">
-                                <a href="#"><img src="assets/images/logo/14.png" alt="Image not found!" /></a>
+                                <a href="#"><img src="assets/images/logo/1.png" alt="Image not found!" /></a>
                             </div>
                             <div class="widget-ecommerce-contact">
                                 <span class="font-medium font-500 text-dark">Got Questions ? Call us 24/7!</span>
