@@ -83,19 +83,20 @@
 
 
   // Auto active class adding with navigation
-  $window.on('load', function() {
-      var current = location.pathname;
-      var $path = current.substring(current.lastIndexOf('/') + 1);
-      $('#navbarSupportedContent li a').each(function(e) {
-          var $this = $(this);
-          // if the current path is like this link, make it active
-          if ($path == $this.attr('href')) {
-              $this.parent('li').addClass('active');
-          } else if ($path == '') {
-              $('.navbar-nav li:first-child').addClass('active');
-          }
-      })
-  });
+  // removed becase of not needed
+  // $window.on('load', function() {
+  //     var current = location.pathname;
+  //     var $path = current.substring(current.lastIndexOf('/') + 1);
+  //     $('#navbarSupportedContent li a').each(function(e) {
+  //         var $this = $(this);
+  //         // if the current path is like this link, make it active
+  //         if ($path == $this.attr('href')) {
+  //             $this.parent('li').addClass('active');
+  //         } else if ($path == '') {
+  //             $('.navbar-nav li:first-child').addClass('active');
+  //         }
+  //     })
+  // });
 
 
   $(".widget-toggle .widget-title").on("click", function() {
