@@ -123,6 +123,45 @@
       }
     </style>
 
+    <style>
+      #bottom-navbar {
+        display: none;
+      }
+
+      @media screen and (max-width: 991.98px) {
+        .copyright {
+          margin-bottom: 58px;
+        }
+        #scroll {
+          bottom: 58px !important;
+        }
+        #bottom-navbar {
+          display: block;
+          height: 55px;
+          z-index: 99;
+        }
+
+        .mobile-navbar-bottom {
+          background-color: #ffffff;
+          overflow: hidden;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          border-top: 1px solid #dddddd;
+        }
+        .mobile-navbar-bottom a {
+          float: left;
+          display: block;
+          color: #666666;
+          text-align: center;
+          padding: 10px 10px 0 10px;
+          text-decoration: none;
+          font-size: 17px;
+          width: 25%;
+        }
+      }
+    </style>
+
     <script>
       let previousYPos = window.pageYOffset;
       let previousSeconds = Date.now() //Todo not using as of now
@@ -8087,6 +8126,79 @@
                   </div>
               </div>
           </div>
+        </div>
+
+        <div class="navbar mobile-navbar-bottom" id="bottom-navbar">
+          <a class="mobile-navbar-bottom-link home-navbar-bottom-link" id="home-navbar-bottom-link" name="home-navbar-bottom-link" href="/">
+            <div>
+                <picture>
+                    <source data-srcset="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/webp-images/home-outline-12.webp" type="image/webp" srcset="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/webp-images/home-outline-12.webp">
+                        <img class="responsive-img home-outline ls-is-cached lazyloaded" src="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/home-outline-12.png" data-src="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/home-outline-12.png" style="width: 18px"> 
+                </picture>
+    
+            </div>
+            <div>
+                <picture>
+                    <source data-srcset="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/webp-images/home-dark-new-12.webp" type="image/webp">
+                        <img class="lazyload responsive-img home-selected" src="//d3s16h6oq3j5fb.cloudfront.net/img/Spinner-2.gif" data-src="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/home-dark-new-12.png" style="width: 18px;display: none;">
+                </picture>
+            </div>
+      
+            <span style="font-size: 12px;position: relative;top: -7px">Home</span>
+          </a>
+      
+          <a class="mobile-navbar-bottom-link category-navbar-bottom-link" id="shop-navbar-bottom-link" name="shop-navbar-bottom-link" href="/category-menu">
+            <div>
+              <picture>
+                  <source data-srcset="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/webp-images/shope-outline-10.webp" type="image/webp" srcset="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/webp-images/shope-outline-10.webp">
+                      <img class="responsive-img shop-outline ls-is-cached lazyloaded" src="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/shope-outline-10.png" data-src="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/shope-outline-10.png" style="width: 18px"> 
+              </picture>
+    
+            </div>
+            <div>
+                <picture>
+                    <source data-srcset="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/webp-images/shope-dark-10.webp" type="image/webp">
+                        <img class="lazyload responsive-img shop-selected" src="//d3s16h6oq3j5fb.cloudfront.net/img/Spinner-2.gif" data-src="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/shope-dark-10.png" style="width: 18px;display: none;">
+                </picture>
+            </div>
+      
+            <span style="font-size: 12px;position: relative;top: -7px">Categories</span>
+          </a>
+          <a class="mobile-navbar-bottom-link city-navbar-bottom-link active" id="city-navbar-bottom-link" name="city-navbar-bottom-link" href="/cake-and-flowers-delivery-cities-in-india">
+            <div>
+              <picture>
+                <source data-srcset="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/webp-images/location-ouline-new-10.webp" type="image/webp" srcset="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/webp-images/location-ouline-new-10.webp">
+                <img class="responsive-img  city-outline ls-is-cached lazyloaded" src="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/location-ouline-new-10.png" data-src="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/location-ouline-new-10.png" style="width: 14px; margin-top: -1px; display: none;"> 
+              </picture>
+    
+            </div>
+            <div>
+                <picture>
+                  <source data-srcset="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/webp-images/location-dark-10.webp" type="image/webp" srcset="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/webp-images/location-dark-10.webp">
+                  <img class="responsive-img city-selected lazyloaded" src="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/location-dark-100.png" data-src="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/location-dark-100.png" style="width: 14px; margin-top: -1px;">
+                </picture>
+            </div>
+
+            <span style="font-size: 12px;position: relative;top: -8px">City</span>
+          </a>
+          <a class="mobile-navbar-bottom-link account-navbar-bottom-link" id="account-navbar-bottom-link" name="account-navbar-bottom-link" href="/profile">
+            <div>
+                <picture>
+                  <source data-srcset="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/webp-images/person-outline-new-10.webp" type="image/webp" srcset="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/webp-images/person-outline-new-10.webp">
+                  <img class="responsive-img  account-outline ls-is-cached lazyloaded" src="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/person-outline-new-10.png" data-src="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/person-outline-new-10.png" style="width: 18px">
+                </picture>
+
+            </div>
+            <div>
+              <picture>
+                <source data-srcset="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/webp-images/person-dark-10.webp" type="image/webp">
+                <img class="lazyload responsive-img account-selected" src="//d3s16h6oq3j5fb.cloudfront.net/img/Spinner-2.gif" data-src="//d3s16h6oq3j5fb.cloudfront.net/img/menu-mobile/icons/person-dark-10.png" style="width: 18px;display: none;">
+              </picture>
+            </div>
+    
+    
+            <span style="font-size: 12px;position: relative;top: -8px">Profile</span>
+          </a>
         </div>
 
         <!--==================== Footer Section Start ====================-->
