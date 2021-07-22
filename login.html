@@ -187,6 +187,33 @@
       .card-footer {
         padding: 0.5rem 1rem;
       }
+      .form-control:focus {
+        border-color: #00b517;
+        /* border-color: var(--theme-primary-color); */
+      }
+      .btn-success {
+        color: #fff;
+        background-color: #00b517;
+        border-color: #00b517;
+      }
+      .btn-success:not(:disabled):not(.disabled):active:focus,
+      .btn-success:not(:disabled):not(.disabled).active:focus {
+        box-shadow: 0 0 0 0.2rem rgb(38 192 58 / 50%);
+      }
+      .btn-success:not(:disabled):not(.disabled):active, 
+      .btn-success:not(:disabled):not(.disabled).active {
+        color: #fff;
+        background-color: #008211;
+        border-color: #00750f;
+      }
+      .btn-success:focus,
+      .btn-success.focus {
+        box-shadow: 0 0 0 0.2rem rgb(38 192 58 / 50%);
+      }
+      .btn:focus, .btn.focus {
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgb(49 103 235 / 25%);
+      }
     </style>
 
     <script>
@@ -1952,7 +1979,7 @@
                <aside class="col-md-3">
                   <!-- ============================ COMPONENT LOGIN 1  ================================= -->
                   <div class="card">
-                     <div class="card-body">
+                     <div class="card-body pb-0">
                         <h4 class="card-title mb-4">Sign in</h4>
                         <form>
                            <div class="form-group">
