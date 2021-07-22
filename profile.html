@@ -2002,109 +2002,55 @@
 
         <div class="full-row">
           <div class="container">
-            <!-- =========================  COMPONENT MYORDER 1 ========================= --> 
             <div class="row">
-               <aside class="col-md-3">
+                <aside class="col-md-3">
                   <!--   SIDEBAR   -->
                   <ul class="list-group">
-                     <a class="list-group-item" href="/profile.html">Profile</a>
-                     <a class="list-group-item active" href="/orders.html">My order history</a>
-                     <a class="list-group-item" href="#">Addresses</a>
-                     <a class="list-group-item" href="#">Change Password</a>
-                     <!-- <a class="list-group-item" href="#">My Reminders</a>
-                     <a class="list-group-item" href="#">Tickets</a> -->
+                      <a class="list-group-item active" href="/profile.html">Profile</a>
+                      <a class="list-group-item" href="/orders.html">My order history</a>
+                      <a class="list-group-item" href="#">Addresses</a>
+                      <a class="list-group-item" href="#">Change Password</a>
+                      <!-- <a class="list-group-item" href="#">My Reminders</a>
+                        <a class="list-group-item" href="#">Tickets</a> -->
                   </ul>
                   <br>
                   <a class="btn btn-light btn-block p-0" href="#"> <i class="fa fa-power-off"></i> <span class="text">Log out</span> </a> 
                   <!--   SIDEBAR .//END   -->
-               </aside>
-               <main class="col-md-9">
-                  <article class="card">
-                     <div class="card-header">
-                        <div class="d-flex justify-content-between align-items-center">
-                           <div class="">
-                              <strong class="d-inline-block mr-3">Order ID: 6123456789</strong>
-                              <span style="white-space: nowrap;">Order Date: 16 December 2018</span>
-                           </div>
-                           <div class="">
-                              <p class="text-right mb-0 mr-1">
-                                 <span class="badge badge-success"> Delivered </span> <a href="#" class=""> Details </a>
-                              </p>
-                           </div>
+                </aside>
+                <main class="col-md-9">
+                  <div class="card" style="
+                    /* width: 400px; */
+                    ">
+                    <div class="card-body" style="
+                      max-width: 500px;
+                      ">
+                      <h4 class="card-title mb-4">Profile</h4>
+                      <form>
+                        <div class="form-row">
+                          <div class="col form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" value="">
+                          </div>
+                          <!-- form-group end.// -->
+                          <div class="col form-group">
+                            <label>Phone Number</label>
+                            <input type="email" class="form-control" value="+919492793427" placeholder="Phone Number">
+                          </div>
+                          <div class="col form-group">
+                            <label>Email</label>
+                            <input type="email" class="form-control" value="Johnson" disabled="">
+                          </div>
+                          <!-- form-group end.// -->
                         </div>
-                      </div>
-                     <div class="table-responsive">
-                        <table class="table table-hover">
-                           <tbody>
-                              <tr>
-                                 <td width="65">
-                                    <img src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/2.jpg" class="img-xs border">
-                                 </td>
-                                 <td>
-                                    <p class="title mb-0">Butterscoth Regular</p>
-                                    <var class="price text-muted">Rs 400</var>
-                                 </td>
-                                 <td> Weight: 2 Kg<br>Message On Cake: Happy Birthday <br> Eggless: True <br>  </td>
-                              </tr>
-                              <tr>
-                                 <td>
-                                    <img src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/2.jpg" class="img-xs border">
-                                 </td>
-                                 <td>
-                                    <p class="title mb-0">Magic Candle</p>
-                                    <var class="price text-muted">Rs 40</var>
-                                 </td>
-                                 <td></td>
-                              </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                     <!-- table-responsive .end// -->
-                  </article>
-                  <article class="card" style="margin-top: 20px;">
-                     <div class="card-header">
-                        <div class="d-flex justify-content-between align-items-center">
-                           <div class="">
-                              <strong class="d-inline-block mr-3">Order ID: 6123456789</strong>
-                              <span style="white-space: nowrap;">Order Date: 16 December 2018</span>
-                           </div>
-                           <div class="">
-                              <p class="text-right mb-0">
-                                 <span class="badge badge-info"> On the way </span> <a href="#" class=""> Details </a>
-                              </p>
-                           </div>
-                        </div>
-                      </div>
-                     <div class="table-responsive">
-                        <table class="table table-hover">
-                           <tbody>
-                              <tr>
-                                 <td width="65">
-                                    <img src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/2.jpg" class="img-xs border">
-                                 </td>
-                                 <td>
-                                    <p class="title mb-0">Butterscoth Regular</p>
-                                    <var class="price text-muted">Rs 400</var>
-                                 </td>
-                                 <td> Weight: 2 Kg<br>Message On Cake: Happy Birthday <br> Eggless: True <br>  </td>
-                              </tr>
-                              <tr>
-                                 <td>
-                                    <img src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/2.jpg" class="img-xs border">
-                                 </td>
-                                 <td>
-                                    <p class="title mb-0">Magic Candle</p>
-                                    <var class="price text-muted">Rs 40</var>
-                                 </td>
-                                 <td></td>
-                              </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                     <!-- table-responsive .end// -->
-                  </article>
-                  <!-- order-group.// --> 
-               </main>
+                        <!-- form-row.// -->
+                        <!-- form-row.// -->
+                        <!-- form-row.// -->
+                        <button class="btn btn-primary btn-block">Update Info</button>
+                      </form>
+                    </div>
+                    <!-- card-body.// -->
+                  </div>
+                </main>
             </div>
           </div>
         </div>
